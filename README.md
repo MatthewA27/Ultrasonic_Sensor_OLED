@@ -1,6 +1,6 @@
 # Ultrasonic Sensor OLED Controller
 
-<img src="Circuit_Image.jpg">
+<img src="Ultrasonic_Circuit.jpg">
 
 ## Overview
 This project uses a Raspberry Pi Pico 2 W to show distance using a Ultrasonic Sensor and and OLED Display. An Ultrasonic Sensor reads the time it takes for a sound wave to return and sends it back to the microcontroller. An SSD1306 OLED display shows the current ADC reading and servo angle in real time.
