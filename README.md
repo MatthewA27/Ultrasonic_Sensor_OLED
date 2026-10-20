@@ -14,11 +14,13 @@ This project uses a Raspberry Pi Pico 2 W to show distance using a Ultrasonic Se
 - Jumper Wires
 
 ## Wiring
+
 **Ultrasonic Sensor**
 - VCC - VBUS
 - GND - GND
 - Trig - GP16
 - Echo - GP 15
+
 **OLED**
 - VCC - 3.3V
 - GND - GND
