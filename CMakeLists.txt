@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(Ultrasonic_Sensor_OLED Ultrasonic_Sensor_OLED.c )
+add_executable(Ultrasonic_Sensor_OLED Ultrasonic_Sensor_OLED.c pico-ssd1306/ssd1306.c)
 
 pico_set_program_name(Ultrasonic_Sensor_OLED "Ultrasonic_Sensor_OLED")
 pico_set_program_version(Ultrasonic_Sensor_OLED "0.1")
@@ -46,10 +46,11 @@ pico_enable_stdio_usb(Ultrasonic_Sensor_OLED 1)
 
 # Add the standard library to the build
 target_link_libraries(Ultrasonic_Sensor_OLED
-        pico_stdlib)
+        pico_stdlib
+        hardware_i2c)
 
 # Add the standard include files to the build
-target_include_directories(Ultrasonic_Sensor_OLED PRIVATE
+target_include_directories(Ultrasonic_Sensor_OLED PRIVATE pico-ssd1306
         ${CMAKE_CURRENT_LIST_DIR}
 )
 
